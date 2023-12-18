@@ -258,10 +258,7 @@
 })()
 $(document).ready(function (){
   $("#yuborish").click(function (){
-    alert("Ishladi")
-    var oz=$("#name").val()
-    alert(oz)
-    if(!$("#name").val()==null&&$("#email").val()!=null&&$("#subject").val()!=null&&$("#message").val()!=null){
+    if($("#name").val()!="" && $("#email").val()!="" && $("#phone").val()!="" && $("#subject").val()!="" && $("#message").val()!=""){
       habar={}
       habar.name=$("#name").val();
       habar.email=$("#email").val();
@@ -280,11 +277,11 @@ $(document).ready(function (){
             location.reload()
           }
           if (sts.status == "208") {
-            alert(habar)
+            alert("Response Error")
           }
         },
         error: function (xato) {
-          alert(xato)
+          alert("Ajax error")
         }
       })
     }

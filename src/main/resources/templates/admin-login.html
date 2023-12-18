@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page for Admin</title>
+<!--    <link rel="icon" type="image/png" href="../source/images/logo_pixian_ai.png">-->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" th:href="@{/assets/css/login.css}" />
+</head>
+<body>
+<div class="login_form_container">
+    <div class="login_form">
+<!--        <img th:src="@{/source/logo.png}" >-->
+        <h2>Login Page for Admin</h2>
+        <div class="input_group">
+            <i class="fa fa-user"></i>
+            <input
+                    type="text"
+                    placeholder="Foydalanuvchi nomi"
+                    class="input_text"
+                    id="login"
+            />
+        </div>
+        <div class="input_group">
+            <i class="fa fa-unlock-alt"></i>
+            <input
+                    type="password"
+                    placeholder="Parol"
+                    class="input_text"
+                    id="password"
+            />
+        </div>
+        <div class="button_group" id="login_button">
+            <button type="button" id="adminkirish">Kirish</button>
+        </div>
+
+    </div>
+<!--    <img style="display: none; margin: 0" src="../source/images/loader 1.gif" id="loader">-->
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script th:src="@{/assets/js/admin.js}"></script>
+</body>
+</html>
